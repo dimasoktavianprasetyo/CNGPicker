@@ -5,7 +5,16 @@ import os
 
 def main():
     root = os.path.dirname(os.path.abspath(__file__))
-    python_exe = sys.executable
+    
+    # Auto-detect local .venv python to prevent global python version mismatches (e.g., Protobuf)
+    venv_win = os.path.join(root, ".venv", "Scripts", "python.exe")
+    venv_unix = os.path.join(root, ".venv", "bin", "python")
+    if os.path.exists(venv_win):
+        python_exe = venv_win
+    elif os.path.exists(venv_unix):
+        python_exe = venv_unix
+    else:
+        python_exe = sys.executable
 
     print("=" * 65)
     print("  INDUSTRIAL ENERGY EFFICIENCY COPILOT - MICROSERVICES RUNNER")

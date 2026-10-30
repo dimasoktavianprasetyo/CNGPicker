@@ -68,3 +68,7 @@ ehthumbs.db
 *.tmp
 temp/
 tmp/
+
+# Document Requirement
+docs/*.pptx
+docs/extracted_slides/
