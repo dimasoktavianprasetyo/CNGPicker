@@ -632,13 +632,13 @@ Contoh studi kelayakan tipikal pada pabrik tekstil kapasitas uap steam 10 Ton/Ja
 
 ```mermaid
 graph TD
-    subgraph Client Tier (Single Page Web / PWA)
-        UI[React 19 + TypeScript + Vite Client]
-        M1[Simulate: Dual-Fuel Energy Advisor]
-        M2[Order: B2B Gas Trade Desk]
-        M3[Track: Freight Telematics & e-POD]
-        M4[Inventory: Multi-Hub Stock View]
-        M5[Pay: Split Billing & Carbon ESG]
+    subgraph ClientTier ["Client Tier (Single Page Web / PWA)"]
+        UI["React 19 + TypeScript + Vite Client"]
+        M1["Simulate: Dual-Fuel Energy Advisor"]
+        M2["Order: B2B Gas Trade Desk"]
+        M3["Track: Freight Telematics & e-POD"]
+        M4["Inventory: Multi-Hub Stock View"]
+        M5["Pay: Split Billing & Carbon ESG"]
         UI --> M1
         UI --> M2
         UI --> M3
@@ -646,12 +646,12 @@ graph TD
         UI --> M5
     end
 
-    subgraph API Gateway Tier (:8000)
-        GW[FastAPI Asynchronous Gateway]
-        WS[WebSocket Manager /ws/copilot]
-        OCR[EasyOCR Computer Vision Engine]
-        REST[REST API Telemetry Ingestion]
-        AUTH[RBAC & JWT Token Authenticator]
+    subgraph GatewayTier ["API Gateway Tier (:8000)"]
+        GW["FastAPI Asynchronous Gateway"]
+        WS["WebSocket Manager /ws/copilot"]
+        OCR["EasyOCR Computer Vision Engine"]
+        REST["REST API Telemetry Ingestion"]
+        AUTH["RBAC & JWT Token Authenticator"]
         UI -->|HTTPS / WSS| GW
         GW --> WS
         GW --> OCR
@@ -659,18 +659,18 @@ graph TD
         GW --> AUTH
     end
 
-    subgraph Microservices Tier (gRPC HTTP/2)
-        AS[Analytics Engine Service :50051]
-        CS[CNG & Bio-CNG Transition Service :50052]
+    subgraph MicroservicesTier ["Microservices Tier (gRPC HTTP/2)"]
+        AS["Analytics Engine Service :50051"]
+        CS["CNG & Bio-CNG Transition Service :50052"]
         GW -->|gRPC: IngestAndAudit / Baseline| AS
         GW -->|gRPC: SimulateCNGTransition| CS
     end
 
-    subgraph Physical Infrastructure Alliance
-        AGE[PT Aqua Gas Energy - CNG Mother Station]
-        IND[PT Indmira Global Energi - Bio-CNG Hub]
-        TRK[Virtual Pipeline Truck Fleet]
-        PRS[Industrial Customer PRS Stations]
+    subgraph InfraTier ["Physical Infrastructure Alliance"]
+        AGE["PT Aqua Gas Energy - CNG Mother Station"]
+        IND["PT Indmira Global Energi - Bio-CNG Hub"]
+        TRK["Virtual Pipeline Truck Fleet"]
+        PRS["Industrial Customer PRS Stations"]
         AS -.->|SCADA Telemetry| AGE
         AS -.->|Biogas Telemetry| IND
         GW -.->|GPS Dispatch & e-POD| TRK
