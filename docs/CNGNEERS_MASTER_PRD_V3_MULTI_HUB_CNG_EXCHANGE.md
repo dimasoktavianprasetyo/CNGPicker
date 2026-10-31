@@ -44,9 +44,10 @@ Proyek platform **CNGneers** dikembangkan oleh tim lintas disiplin yang memaduka
 +----------------------------------------------------------------------------------------------------+
 ```
 
-### Rincian Peran & Tanggung Jawab Anggota Tim:
+### Rincian Profil & Rekam Jejak Eksekutif Tim:
 
 1. **Dimas Oktavian Prasetyo — Founder and Product Business Lead**  
+   * **Profil Eksekutif:** **Direktur Research & Development (R&D) DNL Indonesia**  
    * **Mandat Utama:** Pemilik visi, pengarah strategi, pengambil keputusan utama, pemimpin produk (*product leader*), dan penghubung utama antara *business*, *industrial partnership*, serta *engineering*.
    * **Tanggung Jawab Spesifik:**
      - Menetapkan visi arsitektur bursa *Multi-Hub CNG Exchange & Logistics Control Tower*.
@@ -55,14 +56,16 @@ Proyek platform **CNGneers** dikembangkan oleh tim lintas disiplin yang memaduka
      - Memimpin presentasi panggung (*pitching*) di hadapan dewan juri investor dan panelis korporasi.
 
 2. **M. Noer Fajar — Industry and Business Strategy Lead**  
-   * **Mandat Utama:** Ahli domain industri yang membantu strategi pasar, model komersial, *supply-side insight*, dan kelayakan ekosistem gas.
+   * **Profil Eksekutif:** **Jajaran Direksi PT Telkom Indonesia (Persero) Tbk Group**  
+   * **Mandat Utama:** Ahli domain industri yang memimpin strategi pasar skala besar (*enterprise market strategy*), model komersial, *supply-side insight*, dan kelayakan ekosistem energi industri.
    * **Tanggung Jawab Spesifik:**
-     - Memetakan lanskap industri manufaktur di sepanjang koridor Jawa Timur dan Jawa Tengah yang mengalami defisit pasokan pipa.
+     - Memetakan lanskap korporasi manufaktur di sepanjang koridor industri Pulau Jawa yang mengalami defisit pasokan pipa.
      - Merumuskan struktur *delivered pricing* gas (harga molekul hulu, transmisi pipa, biaya kompresi, margin *virtual pipeline*, dan *platform take-rate* 1.0%).
-     - Memvalidasi kepatuhan tata niaga migas sesuai regulasi Ditjen Migas, BPH Migas, dan standar HSSE bejana tekan.
-     - Menyusun strategi penetrasi pasar B2B (*Go-To-Market*) dan saluran retensi pelanggan industri.
+     - Memvalidasi kepatuhan tata niaga migas sesuai regulasi Ditjen Migas, BPH Migas, dan standar tata kelola korporasi terbuka.
+     - Mengawal model skala bisnis (*growth scaling strategy*) dan hubungan tingkat tinggi dengan pemangku kepentingan industri.
 
 3. **Iman Mukhlisin — Software Engineering Lead**  
+   * **Profil Eksekutif:** **Senior Software Engineer & Distributed Architecture Specialist**  
    * **Mandat Utama:** Memimpin pembangunan PWA distribusi, web analytics, backend, serta kesiapan teknis MVP.
    * **Tanggung Jawab Spesifik:**
      - Membangun arsitektur backend berkinerja tinggi menggunakan Node.js (Fastify/Express) yang dideploy di Google Cloud Platform (Cloud Run).
@@ -71,7 +74,8 @@ Proyek platform **CNGneers** dikembangkan oleh tim lintas disiplin yang memaduka
      - Menjamin keandalan sistem (*reliability*), enkripsi data transaksi TLS 1.3, dan arsitektur database Cloud SQL PostgreSQL.
 
 4. **Herison Surbakti, Ph.D. — Academic and Research Methodology Advisor**  
-   * **Mandat Utama:** Advisor untuk validasi metodologi, kualitas analisis, dan batas klaim ilmiah.
+   * **Profil Akademik:** **Dosen & Peneliti Riset Internasional, Rangsit University (Thailand)**  
+   * **Mandat Utama:** Advisor independen untuk validasi metodologi, kualitas analisis, standar penelitian internasional, dan batas klaim ilmiah.
    * **Tanggung Jawab Spesifik:**
      - Memvalidasi ketepatan formulasi termodinamika energi (persamaan empiris Siegert, standar pengujian efisiensi boiler ASME PTC 4, dan regresi multivariat US DOE / ASHRAE Guideline 14).
      - Mengaudit metodologi perhitungan dekarbonisasi emisi gas rumah kaca berbasis IPCC 2006 Stationary Combustion Tier 2 agar klaim sertifikat karbon memiliki akurasi ilmiah yang dapat dipertahankan di forum ilmiah global.
