@@ -47,7 +47,7 @@ Proyek platform **CNGneers** dikembangkan oleh tim lintas disiplin yang memaduka
 ### Rincian Profil & Rekam Jejak Eksekutif Tim:
 
 1. **Dimas Oktavian Prasetyo — Founder and Product Business Lead**  
-   * **Profil Eksekutif:** **Direktur Research & Development (R&D) DNL Indonesia**  
+   * **Profil Eksekutif:** **Director of Research, Innovation Development (R&D) and Technology Engineering DNL Indonesia**  
    * **Mandat Utama:** Pemilik visi, pengarah strategi, pengambil keputusan utama, pemimpin produk (*product leader*), dan penghubung utama antara *business*, *industrial partnership*, serta *engineering*.
    * **Tanggung Jawab Spesifik:**
      - Menetapkan visi arsitektur bursa *Multi-Hub CNG Exchange & Logistics Control Tower*.
@@ -56,7 +56,7 @@ Proyek platform **CNGneers** dikembangkan oleh tim lintas disiplin yang memaduka
      - Memimpin presentasi panggung (*pitching*) di hadapan dewan juri investor dan panelis korporasi.
 
 2. **M. Noer Fajar — Industry and Business Strategy Lead**  
-   * **Profil Eksekutif:** **Jajaran Direksi PT Telkom Indonesia (Persero) Tbk Group**  
+   * **Profil Eksekutif:** **Jajaran Direksi anak perusahaan PT Telkom Indonesia (Persero) Tbk Group**  
    * **Mandat Utama:** Ahli domain industri yang memimpin strategi pasar skala besar (*enterprise market strategy*), model komersial, *supply-side insight*, dan kelayakan ekosistem energi industri.
    * **Tanggung Jawab Spesifik:**
      - Memetakan lanskap korporasi manufaktur di sepanjang koridor industri Pulau Jawa yang mengalami defisit pasokan pipa.
@@ -65,7 +65,7 @@ Proyek platform **CNGneers** dikembangkan oleh tim lintas disiplin yang memaduka
      - Mengawal model skala bisnis (*growth scaling strategy*) dan hubungan tingkat tinggi dengan pemangku kepentingan industri.
 
 3. **Iman Mukhlisin — Software Engineering Lead**  
-   * **Profil Eksekutif:** **Senior Software Engineer & Distributed Architecture Specialist**  
+   * **Profil Eksekutif:** **Software Engineer & Distributed Architecture Specialist**  
    * **Mandat Utama:** Memimpin pembangunan PWA distribusi, web analytics, backend, serta kesiapan teknis MVP.
    * **Tanggung Jawab Spesifik:**
      - Membangun arsitektur backend berkinerja tinggi menggunakan Node.js (Fastify/Express) yang dideploy di Google Cloud Platform (Cloud Run).
