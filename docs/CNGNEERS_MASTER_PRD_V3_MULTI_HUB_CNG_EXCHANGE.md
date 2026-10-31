@@ -1,8 +1,11 @@
 # CNGneers v3.0: Platform Digital B2B Multi-Hub CNG Exchange & Logistics Control Tower
 
 > **Definitive Master Product Requirement Document (PRD) & Strategic Technical Blueprint — Version 3.0 (Ultimate Enterprise Multi-Hub Edition)**  
-> **Ajang Kompetisi:** ANGEL Innovation Hackathon 2026  
-> **Aliansi Kemitraan Strategis (Sisi Suplai & Operator Infrastruktur CNG Regional):**  
+> **Program & Skema Hibah:** Dana Hibah Internasional **Erasmus+ Uni Eropa (European Union Grant)** melalui proyek **ANGEL (ASEAN Network for Green Entrepreneurship and Leadership)**.  
+> **Penyelenggara / Host Institution:** **PEIAB UII** (Pusat Entrepreneurship dan Inovasi Asosiasi Bisnis / Center for Entrepreneurship and Innovation Universitas Islam Indonesia).  
+> **Ajang Kompetisi Inovasi:** **ANGEL Innovation Hackathon 2026** (Kategori: *Sustainable Energy Transition & Industrial Decarbonization*).  
+> **Entitas Pengembang:** **Tim CNGneers** (Konsorsium Digital & Aliansi Niaga Transisi Energi Bersih).  
+> **Aliansi Kemitraan Strategis Fisik (Sisi Suplai & Operator Infrastruktur CNG Regional):**  
 > - **PT Aqua Gas Energy** (Anchor Partner: Produsen & Operator Infrastruktur CNG Jawa Timur, Mother Station Gas Pipa Sidoarjo, Virtual Pipeline Fleet, & PRS Stasiun Pelanggan)  
 > - **PT Indmira** (Anchor Partner: Pelopor Niaga & Operator Infrastruktur Gas CNG Regional Jawa Bagian Tengah/DIY, Inovator Rekayasa Energi & Konversi Industri Klaster Joglosemar)  
 > **Arsitektur Teknologi:** Google Cloud Platform (GCP) Serverless + Node.js (TypeScript) Engine + React 19 PWA Offline-First  
@@ -11,8 +14,90 @@
 
 ---
 
+## SUSUNAN TIM PENGEMBANG & DEWAN PENASIHAT RISET (TEAM & GOVERNANCE)
+
+Proyek platform **CNGneers** dikembangkan oleh tim lintas disiplin yang memadukan kepemimpinan produk digital, strategi bisnis energi hilir, rekayasa perangkat lunak enterprise, dan validasi riset akademik berstandar internasional:
+
+```
++----------------------------------------------------------------------------------------------------+
+|                             STRUKTUR ORGANISASI TIM PENGEMBANG CNGneers                            |
++----------------------------------------------------------------------------------------------------+
+|                                                                                                    |
+|                             [ DIMAS OKTAVIAN PRASETYO ]                                            |
+|                           Founder & Product Business Lead                                          |
+|                 (Pemilik Visi, Pengarah Strategi, Pemimpin Produk, & Orkestrator)                  |
+|                                         |                                                          |
+|                    +--------------------+--------------------+                                     |
+|                    |                                         |                                     |
+|          [ M. NOER FAJAR ]                           [ IMAN MUKHLISIN ]                            |
+|  Industry & Business Strategy Lead                Software Engineering Lead                        |
+|  (Ahli Domain Industri, Model Komersial,          (PWA Distribusi, Web Analytics, Backend,         |
+|   Supply Insight, Kelayakan Ekosistem Gas)         & Kesiapan Teknis Sistem MVP)                   |
+|                                                                                                    |
+|                                         |                                                          |
+|                    +--------------------+--------------------+                                     |
+|                    |                                                                               |
+|                                [ HERISON SURBAKTI, Ph.D. ]                                         |
+|                           Academic & Research Methodology Advisor                                  |
+|                 (Validasi Metodologi, Kualitas Analisis, & Batas Klaim Ilmiah)                     |
+|                                                                                                    |
++----------------------------------------------------------------------------------------------------+
+```
+
+### Rincian Peran & Tanggung Jawab Anggota Tim:
+
+1. **Dimas Oktavian Prasetyo — Founder and Product Business Lead**  
+   * **Mandat Utama:** Pemilik visi, pengarah strategi, pengambil keputusan utama, pemimpin produk (*product leader*), dan penghubung utama antara *business*, *industrial partnership*, serta *engineering*.
+   * **Tanggung Jawab Spesifik:**
+     - Menetapkan visi arsitektur bursa *Multi-Hub CNG Exchange & Logistics Control Tower*.
+     - Mengorkestrasi kesepakatan konsorsium aliansi sisi suplai antara PT Aqua Gas Energy (Jatim) dan PT Indmira (Jateng/DIY).
+     - Mengawal eksekusi *roadmap* 5 pilar produk (SIMULATE, ORDER, TRACK, INVENTORY, PAY) hingga siap dikompetisikan di tingkat internasional Erasmus+.
+     - Memimpin presentasi panggung (*pitching*) di hadapan dewan juri investor dan panelis korporasi.
+
+2. **M. Noer Fajar — Industry and Business Strategy Lead**  
+   * **Mandat Utama:** Ahli domain industri yang membantu strategi pasar, model komersial, *supply-side insight*, dan kelayakan ekosistem gas.
+   * **Tanggung Jawab Spesifik:**
+     - Memetakan lanskap industri manufaktur di sepanjang koridor Jawa Timur dan Jawa Tengah yang mengalami defisit pasokan pipa.
+     - Merumuskan struktur *delivered pricing* gas (harga molekul hulu, transmisi pipa, biaya kompresi, margin *virtual pipeline*, dan *platform take-rate* 1.0%).
+     - Memvalidasi kepatuhan tata niaga migas sesuai regulasi Ditjen Migas, BPH Migas, dan standar HSSE bejana tekan.
+     - Menyusun strategi penetrasi pasar B2B (*Go-To-Market*) dan saluran retensi pelanggan industri.
+
+3. **Iman Mukhlisin — Software Engineering Lead**  
+   * **Mandat Utama:** Memimpin pembangunan PWA distribusi, web analytics, backend, serta kesiapan teknis MVP.
+   * **Tanggung Jawab Spesifik:**
+     - Membangun arsitektur backend berkinerja tinggi menggunakan Node.js (Fastify/Express) yang dideploy di Google Cloud Platform (Cloud Run).
+     - Merancang dan mengimplementasikan aplikasi mobile pengemudi berbasis **React 19 Progressive Web App (PWA)** dengan kapabilitas **Offline-First (IndexedDB)** untuk e-POD tanpa hambatan sinyal di ruang boiler pabrik.
+     - Mengembangkan pipeline streaming *real-time* SCADA via Google Cloud Pub/Sub dan koneksi WebSockets.
+     - Menjamin keandalan sistem (*reliability*), enkripsi data transaksi TLS 1.3, dan arsitektur database Cloud SQL PostgreSQL.
+
+4. **Herison Surbakti, Ph.D. — Academic and Research Methodology Advisor**  
+   * **Mandat Utama:** Advisor untuk validasi metodologi, kualitas analisis, dan batas klaim ilmiah.
+   * **Tanggung Jawab Spesifik:**
+     - Memvalidasi ketepatan formulasi termodinamika energi (persamaan empiris Siegert, standar pengujian efisiensi boiler ASME PTC 4, dan regresi multivariat US DOE / ASHRAE Guideline 14).
+     - Mengaudit metodologi perhitungan dekarbonisasi emisi gas rumah kaca berbasis IPCC 2006 Stationary Combustion Tier 2 agar klaim sertifikat karbon memiliki akurasi ilmiah yang dapat dipertahankan di forum ilmiah global.
+     - Menetapkan batasan klaim (*scientific claim boundaries*) agar proyeksi finansial dan penghematan energi berada dalam koridor kaidah riset yang valid dan dapat diuji secara empiris.
+
+---
+
+## KONTEKS PROGRAM HIBAH INTERNASIONAL: ERASMUS+ & PEIAB UII
+
+**CNGneers** lahir dari inisiatif riset dan inovasi yang didanai melalui hibah internasional **Erasmus+ Capacity Building in Higher Education (CBHE)** yang didukung oleh **Uni Eropa (European Union)** melalui konsorsium proyek **ANGEL (ASEAN Network for Green Entrepreneurship and Leadership)**.
+
+Di tingkat institusi pelaksana, program ini diwadahi dan diselenggarakan secara terstruktur oleh **PEIAB UII (Pusat Entrepreneurship dan Inovasi Asosiasi Bisnis Universitas Islam Indonesia)** sebagai *hub* inkubasi inovasi hijau (*green entrepreneurship*).
+
+Hibah internasional ini bertujuan mencetak inovasi kepemimpinan hijau dan teknologi transisi energi yang mampu:
+1. Menurunkan ketergantungan negara-negara ASEAN (khususnya Indonesia) terhadap bahan bakar fosil impor berkadar emisi tinggi (LPG dan solar industri).
+2. Memfasilitasi kolaborasi erat *Triple-Helix* (Perguruan Tinggi/Peneliti, Pelaku Industri Gas Riil, dan Pembuat Kebijakan).
+3. Mendorong model bisnis sirkular (*green circular economy*) yang terukur secara ilmiah, layak secara finansial, dan siap dieksekusi di lapangan (*bankable & execution-ready*).
+
+Dokumen ini disusun sebagai wujud pertanggungjawaban ilmiah dan rekayasa enterprise tingkat tinggi dari Tim CNGneers untuk memenuhi standar penilaian ketat hibah internasional Uni Eropa.
+
+---
+
 ## DAFTAR ISI LENGKAP
 
+- [Susunan Tim Pengembang & Dewan Penasihat Riset (Team & Governance)](#susunan-tim-pengembang--dewan-penasihat-riset-team--governance)
+- [Konteks Program Hibah Internasional: Erasmus+ & PEIAB UII](#konteks-program-hibah-internasional-erasmus--peiab-uii)
 1. [Executive Summary & Visi Strategis Multi-Hub](#1-executive-summary--visi-strategis-multi-hub)
 2. [Macro Context & Kesenjangan Pasokan Gas Non-Pipa Nasional](#2-macro-context--kesenjangan-pasokan-gas-non-pipa-nasional)
 3. [Profil & Aliansi Dua Operator CNG (Aqua Gas Energy + Indmira)](#3-profil--aliansi-dua-operator-cng-aqua-gas-energy--indmira)
